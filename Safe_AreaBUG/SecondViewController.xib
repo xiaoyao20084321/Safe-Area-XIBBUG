@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecondViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i2p-KM-VTT">
+                    <rect key="frame" x="20" y="84" width="335" height="128"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="128" id="FGm-2M-dSP"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U53-8U-iZ8">
+                    <rect key="frame" x="154.5" y="350.5" width="65" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="rG9-Tp-dfw"/>
+                    </constraints>
+                    <state key="normal" title="点击push"/>
+                    <connections>
+                        <action selector="push:" destination="-1" eventType="touchUpInside" id="42m-9Q-0up"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="i2p-KM-VTT" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="TA7-f8-b9J"/>
+                <constraint firstItem="U53-8U-iZ8" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="c8a-Is-ihD"/>
+                <constraint firstItem="i2p-KM-VTT" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="20" id="jkd-sn-I5l"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="i2p-KM-VTT" secondAttribute="trailing" constant="20" id="lls-pO-L3W"/>
+                <constraint firstItem="U53-8U-iZ8" firstAttribute="centerY" secondItem="Q5M-cg-NOt" secondAttribute="centerY" id="ojY-qR-pZK"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+</document>

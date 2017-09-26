@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ThirdViewController.h
 //  Safe_AreaBUG
 //
 //  Created by 网络事业部 on 2017/9/25.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ThirdViewController : UIViewController
 
 @end
-
